@@ -1,0 +1,1497 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+    /* text-transform: capitalize;*/
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+.banner {
+    background-color: rgb(62, 153, 141);
+    position: fixed;
+    z-index: 1001;
+    /*ensure banner stays above nav*/
+    width: 100%;
+    top: 0;
+}
+
+.banner-content {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    margin-left: auto;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', 'Roboto', sans-serif;
+}
+
+.contact-info div {
+    margin-right: 20px;
+}
+
+.contact-info p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 7%;
+    z-index: 1000;
+    background-color: rgb(77, 178, 164);
+    margin-top: 20px;
+}
+
+header .logo {
+    font-weight: bolder;
+    font-size: 25px;
+    color: #fff;
+}
+
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: #fff;
+    display: block;
+}
+
+/* Only apply hover effect to navbar links, not the logo */
+header .navbar ul li a:hover {
+    background-color: rgb(84, 218, 200);
+    color: #fff;
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    width: 200px;
+    left: 0;
+    background-color: rgb(77, 178, 164);
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+}
+
+header .navbar ul li ul li ul {
+    left: 200px;
+    top: 0;
+}
+
+header .navbar ul li:focus-within>ul,
+header .navbar ul li:hover>ul {
+    display: initial;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    color: #fff;
+}
+
+/* Adjust styling for search bar in navigation */
+header .navbar ul li.search-form {
+    display: flex;
+    margin-left: auto;
+}
+
+header .navbar ul li.search-form input[type="text"] {
+    padding: 9px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-top:10px;
+    width:60%;
+    height:37px;
+}
+
+header .navbar ul li.search-form button {
+    padding: 9px;
+    background-color:rgb(14, 70, 63);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 6px;
+    width:30%;
+    height:40px;
+}
+
+header .navbar ul li.search-form button:hover {
+    background-color: rgb(75, 168, 156);
+}
+
+@media (max-width: 991px) {
+    .banner {
+        width: 100%
+    }
+
+    .banner-content {
+        padding: 5px;
+    }
+
+    header {
+        padding: 35px;
+    }
+
+    header label {
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgb(77, 178, 164);
+        border-top: 1px solid #fff;
+        display: none;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        background: rgb(77, 178, 164);
+    }
+
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked~.navbar {
+        display: initial;
+    }
+
+    header .navbar ul li.search-form {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    header .navbar ul li.search-form input[type="text"] {
+        width: 125px; /* Adjust width for smaller screens */
+        margin-top: 0;
+    }
+
+    header .navbar ul li.search-form button {
+        padding: 5px 10px;
+        margin-top: 0;
+        width:100px;
+    }
+}
+
+/*Styling for footer*/
+footer {
+    margin-top: auto;
+    background-color: rgb(62, 153, 141);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-icons {
+    margin-top: 10px;
+}
+
+.footer-icons a {
+    color: #fff;
+    margin-right: 10px;
+}
+
+/*making footer adjustable for smaller screens*/
+@media (max-width: 991px) {
+    footer {
+        font-size: 14px;
+    }
+}
+
+/* Styling for main section image overlay */
+
+.main-section {
+    text-align: center;
+    margin-top: 5.5%;
+    margin-bottom: 55px;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* Set the width to 100% */
+    height: auto;
+}
+
+.image-container img {
+    width: 95%;
+    /* Set the width to 100% */
+    max-height: 675px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: none;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.image-overlay h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    position: relative;
+    color: white;
+}
+
+.image-overlay p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+    position: relative;
+}
+
+.image-overlay button .btn {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.image-overlay img {
+    width: 100%;
+    height: auto;
+}
+
+/* make main section  adjustable for smaller screens */
+@media (max-width: 991px) {
+    .main-section {
+        padding: 50px 0;
+        margin-top: 7%;
+    }
+
+    .image-container img {
+        height: auto;
+        /* Reset height */
+    }
+
+    .image-overlay h1 {
+        font-size: 20px;
+        margin-top: 90px;
+    }
+
+    .image-overlay p {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+    .btn {
+        margin-bottom: 40px;
+        font-size: 14px;
+    }
+}
+
+/* Styling for about section */
+.about-section {
+    padding: 60px;
+    background-color: #f3f5f7;
+}
+
+.about-section h2{
+    margin-bottom: 50px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.about-content {
+    text-align: justify;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.about-image:hover img{
+    transform: scale(1.05);
+}
+
+.about-content h2 {
+    margin-bottom: 20px;
+    color: rgb(14, 70, 63);
+}
+
+/* Styling for paragraphs in the about section */
+.about-content p {
+    font-size: 20px;
+    line-height: 2.2;
+    color: black;
+    /* Adjust text color as needed */
+    display: block
+}
+
+/* Media query for max width of 991px */
+@media (max-width: 991px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        /* Change to a single column layout for smaller screens */
+    }
+
+    .about-content h2 {
+        font-size: 24px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+}
+
+/* Styling for faq section */
+.faq-section {
+    padding: 70px;
+    background-color: rgb(239, 226, 202);
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.faq-content {
+    text-align: center;
+}
+
+.faq-item {
+    margin-bottom: 30px;
+}
+
+.faq-item h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: rgb(14, 70, 63);
+}
+
+.faq-item h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: rgb(14, 70, 63);
+}
+
+.faq-item p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #000;
+}
+
+.faq-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Accordion styles */
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-header {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    outline: none;
+}
+
+.accordion-content {
+    padding: 10px;
+    background-color: #f9f9f9;
+    display: none;
+}
+
+/* Show content when accordion is active */
+.accordion-item.active .accordion-content {
+    display: block;
+}
+
+/* Media query for max width of 991px */
+@media (max-width: 991px) {
+    .faq-grid {
+        grid-template-columns: 1fr;
+        /* Change to a single column layout for smaller screens */
+    }
+
+    .faq-content h2 {
+        font-size: 24px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .faq-content h3 {
+        font-size: 20px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .faq-content p {
+        font-size: 16px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .faq-image img {
+        width: 100%;
+        /* Adjust image width to occupy full width */
+    }
+
+    .accordion-header {
+        padding: 10px 20px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .accordion-content {
+        padding: 10px 20px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .faq-item h2 {
+        font-size: 24px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .faq-item h3 {
+        font-size: 20px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .faq-item p {
+        font-size: 16px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .faq-item img {
+        width: 100%;
+        /* Adjust image width to occupy full width */
+    }
+}
+
+/* Contact Section Styles */
+.contact-section {
+    padding: 50px;
+    margin-top: 0;
+    background-color: #e4e4e4;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-map {
+    height: 450px;
+    margin-left: 30px;
+    /* Adjust the margin-left value to move the map to the right */
+    margin-right: 30px;
+    /* Added margin-right to maintain space between the map and the form */
+}
+
+.map-container {
+    height: 450px;
+    /* Set a fixed height for the container */
+    overflow: hidden;
+    /* Hide overflow to prevent map from affecting other elements */
+}
+
+.contact-map {
+    width: 100%;
+    height: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    margin:1 auto;
+    border:20px;
+    margin-left: 40px;
+}
+
+.contact-form h2 {
+    margin-bottom: 10px;
+    color: rgb(14, 70, 63);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.btn{
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(75, 168, 156);
+    width:100%
+}
+
+/* Media query for max width of 991px */
+@media (max-width: 991px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        /* Change to a single column layout for smaller screens */
+    }
+
+    .contact-map {
+        margin-left: 0;
+        margin-right: 0;
+        width:auto ;
+    }
+
+    .contact-form {
+        padding: 10px 20px;
+        /* Add horizontal padding to the contact form */
+        margin-top: 100px;
+        /* Add margin to the top of the contact form */
+        margin-right:30px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 10px;
+        /* Adjust input and textarea padding */
+    }
+}
+
+/* Login and Signup Styles */
+
+/* Form Container */
+.login{
+    width: 450px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 200px auto 40px;
+}
+
+.signup {
+    width: 60%;
+    height: 90%;
+    padding: 2rem 1rem;
+    margin: 100px auto;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Login Styles */
+.login img {
+    width: 160px;
+    margin-bottom: 20px;
+}
+
+.login h1 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.login p {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.user-container,
+.pass-container {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.user-container label,
+.pass-container label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.user-container input,
+.pass-container input {
+    width: 100%;
+    padding: 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.password-toggle-container {
+    position: relative;
+}
+
+#togglePassword {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 14px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+
+.user-container input:focus,
+.pass-container input:focus {
+    border-color: #2E8B57;
+    outline: none;
+}
+
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #666;
+}
+
+.remember input[type="checkbox"] {
+    margin: 0;
+    cursor: pointer;
+}
+
+.forgot a {
+    color: #666;
+    text-decoration: none;
+}
+
+.login button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(62, 153, 141);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.member {
+    margin-top: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+.member a {
+    color: #2E8B57;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 991px) {
+    .login,
+    .signup {
+        width: 90%;
+        margin: 100px auto;
+        padding: 30px;
+    }
+
+    .login form input,
+    .signup form input {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .terms input {
+        height: 1rem;
+        width: 1rem;
+        vertical-align: text-top;
+        cursor: pointer;
+    }
+
+    .terms label {
+        font-size: 0.9rem;
+    }
+
+    .user-container{
+        width: 97%;
+        position: relative;
+    }
+    .pass-container {
+        width: 97%;
+        position: relative;
+    }
+
+    .user-role{
+        width:100%;
+        padding: 10px 20px;
+        border-radius: 20px;
+        align-items: center;
+        margin-left: 40px;
+        display:flex;
+    }
+
+    .user-role label{
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 991px) {
+    .login {
+        width: 90%;
+        margin: 100px auto 40px;
+        padding: 30px;
+    }
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 15%;
+    margin-bottom: 20%;
+}
+
+.profile-form input[type="text"],
+.profile-form input[type="date"] {
+    width: calc(100% - 20px); /* Adjust input width to account for padding */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.profile-form button {
+    background-color:rgb(14, 70, 63);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 96%;
+}
+
+/* Media query for smaller screens*/
+@media (max-width: 991px) {
+    .profile-container {
+        padding: 20px;
+        margin-top: 40%;
+        margin-bottom: 43.5%;
+    }
+
+    .profile-form input[type="text"],
+    .profile-form input[type="date"] {
+        width: 100%;
+        /* Adjust input width to occupy full width */
+    }
+
+    .profile-form button {
+        width: 100%;
+        /* Adjust button width to occupy full width */
+    }
+}
+
+/*Styling for grid section*/
+.grid-section {
+    padding: 100px;
+}
+
+.container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: rgb(14, 70, 63);
+    text-align: center;
+}
+
+.container2 p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.grid-item h4 {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.grid-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: black;
+}
+
+/* INFO ON SALCC SECTION*/
+
+.about-salcc{
+    padding:85px;
+}
+
+.salcc-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.salcc-item img {
+    max-width: 100%;
+    height: auto;
+    margin-top:50px;
+    border-radius: 5px;
+}
+
+.abtsalcc h2 {
+    color: rgb(14, 70, 63);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.salcc-item h4{
+    margin-top:50px;
+    font-size: 20px;
+    color: rgb(14, 70, 63);
+}
+
+.salcc-item p {
+    margin-top:20px;
+    font-size: 16px;
+    color: black;
+}
+
+/*Styling for easy reserve section*/
+
+/* Media query for max width of 991px */
+@media (max-width: 991px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        /* Change to a single column layout for smaller screens */
+    }
+
+    .grid-item img {
+        width: 150px;
+        /* Reduce image width for smaller screens */
+        height: 150px;
+        /* Reduce image height for smaller screens */
+    }
+
+    .grid-item h4 {
+        font-size: 12px;
+        /* Reduce heading font size for smaller screens */
+    }
+
+    .salcc-container {
+        grid-template-columns: 1fr;
+    }
+
+    .salcc-item img {
+        margin-top: 0; /* Remove top margin for the image */
+        margin-right: 20px; /* Add margin to separate image and paragraph */
+        float: left; /* Float the image to the left */
+    }
+
+    .salcc-item p {
+        margin-top: 0; /* Remove top margin for the paragraph */
+        font-size: 16px;
+        color: black;
+        overflow: hidden; /* Clear the float */
+    }
+}
+
+/*styling for booking*/
+
+.heading span {
+    padding:10px;
+}
+
+.booking h1 {
+    font-size: 30px;
+    color: rgb(14, 70, 63);
+    text-align: center;
+    text-transform: uppercase;
+    padding:30px;
+    border-radius: 5px;
+}
+
+.booking {
+    padding: 100px 0%;
+    width: 100%;
+    /* Ensure the section spans the full width of the body */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+}
+
+.booking .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    /* Center the boxes horizontally */
+}
+
+.booking .box-container .box {
+    flex: 1 1 calc(30% - 2rem);
+    /* Adjust box width to fit three boxes per row with 2rem gap */
+    max-width: calc(30% - 2rem);
+    /* Set maximum width for flexibility */
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    margin-bottom: 2rem;
+    /* Add bottom margin for spacing between rows */
+}
+
+.booking .box-container .box img {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.booking .box-container .box .content {
+    padding: 2rem;
+}
+
+.booking .box-container .box .content h3 {
+    font-size: 2rem;
+    color: rgb(14, 70, 63);
+}
+
+.booking .box-container .box .content h3 i {
+    color: var(--orange);
+}
+
+.booking .box-container .box .content p {
+    font-size: 1.7rem;
+    color: rgb(14, 70, 63);
+    padding: 1rem 0;
+}
+
+.booking .box-container .box .content .stars i {
+    font-size: 1.7rem;
+    color: var(--orange);
+}
+
+.booking .box-container .box .content .price {
+    font-size: 2rem;
+    color: rgb(14, 70, 63);
+    padding: 1rem;
+}
+
+.booking .box-container .box .content .price span {
+    color: rgb(14, 70, 63);
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+.btn{
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(75, 168, 156);
+    width:100%;
+}
+
+/* Media query for screens with a maximum width of 991px */
+@media (max-width: 991px) {
+    .booking .box-container {
+        gap: 1rem;
+        /* Reduce the gap between boxes for smaller screens */
+        justify-content: center;
+        /* Center the boxes horizontally */
+    }
+
+    .booking .box-container .box {
+        flex: 1 1 100%;
+        /* Adjust box width to occupy full width */
+        max-width: 100%;
+        /* Set maximum width to occupy full width */
+    }
+
+    .booking .box-container .box img {
+        height: auto;
+        /* Reset image height for smaller screens */
+    }
+
+    .booking .box-container .box .content h3,
+    .booking .box-container .box .content p,
+    .booking .box-container .box .content .price {
+        font-size: 1.2rem;
+        /* Reduce font size for smaller screens */
+    }
+
+    .heading span {
+        border-radius: 7px;
+        padding: 7px;
+        font-size: 24px;
+        color: rgb(14, 70, 63);
+        transform: matrix(1, 0.1, 0.1, 1, 0, 0);
+    }
+
+    .heading span.space {
+        background: none;
+    }
+}
+
+/*Styling for booking modal*/
+/* Modal styles */
+.modal {
+    display:none; /* Hidden by default */
+    position: fixed; 
+    z-index: 999; /* Ensure the modal appears above other content */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid rgb(75, 168, 156);
+    width: 70%;
+    max-width: 600px; /* Adjusted width */
+    border-radius: 10px;
+    position: relative;
+    margin-bottom:20px;
+}
+
+/* Modal image styling */
+.modal-content img, .images img, .image-overlay img {
+    max-width: 100%;  /* Fit within modal or overlay */
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Tab styles */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tablinks {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(75, 168, 156); /* Changed background color */
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.tablinks.active {
+    background-color: rgb(84, 218, 200); /* Changed active background color */
+    color: #fff;
+}
+
+.tabcontent {
+    padding: 20px 0;
+}
+
+.tabcontent p{
+    color: black;
+}
+
+.tabcontent.active {
+    display: block;
+}
+
+.tabcontent.active p{
+    color: black;
+}
+
+/* Booking form styles */
+.booking-form {
+    margin-top: 20px;
+}
+
+.booking-form label {
+    margin-top: 10px;
+    display: block;
+}
+
+.booking-form input[type="date"],
+.booking-form input[type="time"],
+.booking-form input[type="number"],
+.booking-form button {
+    width: calc(50% - 5px); /* Adjusted width */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-form button {
+    background-color: rgb(75, 168, 156);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100%; /* Adjusted width */
+}
+
+/* Close button styles */
+.close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Calendar styles */
+.calendar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calendar .day {
+    width: calc(14.28% - 10px);
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgb(14, 70, 63);
+    border-radius: 5px;
+}
+
+/* Image styles for Pictures tab */
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.images img {
+    width: 150px;
+    height: 100px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.availability-table-container {
+    overflow-x: auto;
+}
+
+.availability-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.availability-table th, .availability-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.availability-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.availability-table td.available {
+    background-color: #c3e6cb; /* Green */
+}
+
+.availability-table td.booked {
+    background-color: #f5c6cb; /* Red */
+}
+
+.roomDetails {
+    padding: 40px;
+}
+
+.roomDetails h2 {
+    margin-bottom: 20px;
+    color: rgb(14, 70, 63);
+}
+
+.roomDetails p {
+    margin-bottom: 20px;
+    color: black;
+}
+
+.roomDetails iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin-bottom: 40px;
+}
+
+.roommap{
+    height:100%;
+    width:100%;
+}
+
+/* Media query for screens with a maximum width of 991px */
+
+@media (max-width: 991px){
+    .modal-content {
+        width: 90%;
+        margin: 40% auto;
+    }
+
+    .availability-table th, .availability-table td {
+        padding: 5px;
+    }
+
+    .availability-table th {
+        font-size: 14px;
+    }
+
+    .availability-table td {
+        font-size: 12px;
+    }
+
+    .roomDetails {
+        padding: 20px;
+    }
+
+    .tablinks {
+        padding: 7px 11px;
+    }
+
+    .images img {
+        width: 100px;
+        height: 75px;
+    }
+
+    .roommap{
+        height:100%;
+        width:100%;
+    }
+}
+
+/*styling for settings*/
+.settings{
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    /*add border*/
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /*make box sit in middle of page*/
+    margin-top: 150px;
+}
+
+.check-notif {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(14, 70, 63);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:rgb(75, 168, 156);
+}
+
+button:active {
+    background-color: #004080;
+}
+
+.home {
+    margin-top: 20px;
+}
+
+.home a {
+    text-decoration: none;
+    color: #333;
+}
+
+.home a:hover {
+    text-decoration: underline;
+}
+
+.home i {
+    margin-right: 5px;
+}
+
+.home a {
+    display: flex;
+    align-items: center;
+}
+
+/*aking adjustable for smaller screens*/
+@media (max-width: 991px) {
+    .settings {
+        padding: 20px;
+    }
+
+    .settings h2 {
+        font-size: 24px;
+    }
+
+    .settings p {
+        font-size: 16px;
+    }
+
+    .settings button {
+        width: 100%;
+    }
+}

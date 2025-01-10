@@ -1,0 +1,116 @@
+[2024-12-07 21:51:00] USER: admin12, STATUS: Cancellation Failed, DETAILS: Missing booking ID
+[2024-12-07 21:51:06] USER: admin12, STATUS: Cancellation Failed, DETAILS: Missing booking ID
+[2024-12-07 21:51:11] USER: admin12, STATUS: Success, DETAILS: Booked BUS-0R-01 on Tuesday at 14:00:00
+[2024-12-07 21:52:12] USER: dawsonjm, STATUS: Success, DETAILS: Booked BUS-0R-03 on Monday at 10:00:00
+[2024-12-07 21:55:48] USER: dawsonjm, STATUS: Success, DETAILS: Booked TRA-0R-01 on Friday at 08:00:00
+[2024-12-07 22:03:17] USER: dawsonjm, STATUS: Booking marked as Debug, DETAILS: Room Name: BUS-0R-03
+[2024-12-07 22:03:17] USER: dawsonjm, STATUS: Booking marked as Debug, DETAILS: Table Name: bus_rooms
+[2024-12-07 22:03:19] USER: dawsonjm, STATUS: Booking marked as Success, DETAILS: Booking ID: 318 marked as Used and room reset to Available
+[2024-12-07 22:03:30] USER: dawsonjm, STATUS: Cancellation Success, DETAILS: Cancelled booking for TRA-0R-01 on Friday at 08:00:00
+[2024-12-07 22:03:41] USER: dawsonjm, STATUS: Failed, DETAILS: Time slot not found.
+[2024-12-07 22:03:47] USER: dawsonjm, STATUS: Failed, DETAILS: Time slot not found.
+[2024-12-07 22:03:56] USER: dawsonjm, STATUS: Success, DETAILS: Booked BUS-0R-01 on Monday at 13:00:00
+[2024-12-07 22:04:07] USER: dawsonjm, STATUS: Failed, DETAILS: Time slot not found.
+[2024-12-07 22:05:34] USER: dawsonjm, STATUS: Failed, DETAILS: Time slot not found.
+[2024-12-07 22:05:40] USER: dawsonjm, STATUS: Success, DETAILS: Booked BUS-0R-01 on Friday at 08:00:00
+[2024-12-07 22:06:15] USER: dawsonjm, STATUS: Success, DETAILS: Booked BUS-0R-01 on Thursday at 08:00:00
+[2024-12-07 22:06:33] USER: dawsonjm, STATUS: Cancellation Success, DETAILS: Cancelled booking for BUS-0R-01 on Friday at 08:00:00
+[2024-12-07 22:42:12] USER: dawsonjm, STATUS: Success, DETAILS: Booked TRA-0R-01 on Wednesday at 13:00:00
+[2024-12-08 01:18:51] USER: dawsonjm, STATUS: Success, DETAILS: Booked BUS-0R-01 on Monday at 08:00:00
+[2024-12-08 01:27:12] USER: dawsonjm, STATUS: Success, DETAILS: Booked BUS-0R-01 on Monday at 08:00:00
+[2024-12-08 01:27:28] USER: admin12, STATUS: Cancellation Failed, DETAILS: Booking not found
+[2024-12-08 01:27:29] USER: admin12, STATUS: Cancellation Failed, DETAILS: Booking not found
+[2024-12-08 01:27:30] USER: admin12, STATUS: Cancellation Failed, DETAILS: Booking not found
+[2024-12-08 01:27:30] USER: admin12, STATUS: Cancellation Failed, DETAILS: Booking not found
+[2024-12-08 01:27:30] USER: admin12, STATUS: Cancellation Failed, DETAILS: Booking not found
+[2024-12-08 01:29:31] USER: dawsonjm, STATUS: Cancellation Failed, DETAILS: Missing booking ID
+[2024-12-08 01:37:59] USER: dawsonjm, STATUS: Cancellation Failed, DETAILS: Missing booking ID
+[2024-12-08 01:39:30] USER: dawsonjm, STATUS: Cancellation Failed, DETAILS: Missing booking ID
+[2024-12-08 01:40:25] USER: dawsonjm, STATUS: Cancellation Failed, DETAILS: Missing booking ID
+[2024-12-08 01:40:47] USER: dawsonjm, STATUS: Cancellation Failed, DETAILS: Not authorized to cancel this booking
+[2024-12-08 01:40:51] USER: dawsonjm, STATUS: Cancellation Failed, DETAILS: Not authorized to cancel this booking
+[2024-12-08 01:41:03] USER: dawsonjm, STATUS: Cancellation Success, DETAILS: Cancelled booking for BUS-0R-01 on Monday at 08:00:00
+[2024-12-08 01:41:03] USER: dawsonjm, STATUS: Cancellation Failed, DETAILS: Booking not found
+[2024-12-08 01:41:13] USER: dawsonjm, STATUS: Cancellation Failed, DETAILS: Not authorized to cancel this booking
+[2024-12-08 01:41:36] USER: admin12, STATUS: Cancellation Success, DETAILS: Cancelled booking for BUS-0R-01 on Tuesday at 14:00:00
+[2024-12-08 01:43:04] USER: dawsonjm, STATUS: Cancellation Failed, DETAILS: Not authorized to cancel this booking
+[2024-12-08 01:44:20] USER: dawsonjm, STATUS: Cancellation Failed, DETAILS: Not authorized to cancel this booking
+[2024-12-08 01:44:28] USER: dawsonjm, STATUS: Cancellation Success, DETAILS: Cancelled booking for TRA-0R-01 on Wednesday at 13:00:00
+[2024-12-08 01:44:28] USER: dawsonjm, STATUS: Cancellation Failed, DETAILS: Booking not found
+[2024-12-08 01:44:28] USER: dawsonjm, STATUS: Cancellation Failed, DETAILS: Booking not found
+[2024-12-08 01:45:03] USER: dawsonjm, STATUS: Success, DETAILS: Booked TRA-0R-01 on Tuesday at 14:00:00
+[2024-12-08 01:45:48] USER: dawsonjm, STATUS: Cancellation Failed, DETAILS: Not authorized to cancel this booking
+[2024-12-08 01:47:04] USER: dawsonjm, STATUS: Cancellation Failed, DETAILS: Not authorized to cancel this booking
+[2024-12-08 01:50:13] USER: admin12, STATUS: Success, DETAILS: Booked LFT-0R-01 on Tuesday at 15:00:00
+[2024-12-08 01:55:25] USER: admin12, STATUS: Cancellation Failed, DETAILS: Missing booking ID
+[2024-12-08 01:55:47] USER: admin12, STATUS: Cancellation Failed, DETAILS: Missing booking ID
+[2024-12-08 01:56:39] USER: admin12, STATUS: Cancellation Failed, DETAILS: Missing booking ID
+[2024-12-08 01:57:06] USER: admin12, STATUS: Cancellation Failed, DETAILS: Missing booking ID
+[2024-12-08 01:58:54] USER: admin12, STATUS: Cancellation Failed, DETAILS: Missing booking ID
+[2024-12-08 02:01:39] USER: admin12, STATUS: Success, DETAILS: Booked BUS-0R-01 on Monday at 08:00:00
+[2024-12-08 02:04:33] USER: admin12, STATUS: Cancellation Failed, DETAILS: Missing booking ID
+[2024-12-08 02:13:44] USER: dawsonjm, STATUS: Success, DETAILS: Booked BUS-0R-01 on Tuesday at 14:00:00
+[2024-12-08 02:14:06] USER: dawsonjm, STATUS: Failed, DETAILS: Time slot not found.
+[2024-12-08 02:16:10] USER: dawsonjm, STATUS: Failed, DETAILS: Time slot not found.
+[2024-12-08 02:17:00] USER: dawsonjm, STATUS: Cancellation Failed, DETAILS: Unknown column 'user_id' in 'where clause'
+[2024-12-08 02:17:05] USER: dawsonjm, STATUS: Success, DETAILS: Booked BUS-0R-01 on Friday at 11:00:00
+[2024-12-08 02:17:39] USER: dawsonjm, STATUS: Cancellation Failed, DETAILS: Unknown column 'user_id' in 'where clause'
+[2024-12-08 02:18:32] USER: dawsonjm, STATUS: Failed, DETAILS: Time slot not found.
+[2024-12-08 02:18:46] USER: dawsonjm, STATUS: Failed, DETAILS: Time slot not found.
+[2024-12-08 02:19:05] USER: dawsonjm, STATUS: Success, DETAILS: Booked BUS-0R-01 on Monday at 14:00:00
+[2024-12-08 02:19:28] USER: dawsonjm, STATUS: Cancellation Failed, DETAILS: Unknown column 'user_id' in 'where clause'
+[2024-12-08 02:20:59] USER: dawsonjm, STATUS: Success, DETAILS: Booked BUS-0R-01 on Tuesday at 14:00:00
+[2024-12-08 02:21:18] USER: dawsonjm, STATUS: Failed, DETAILS: Time slot not found.
+[2024-12-08 02:23:33] USER: dawsonjm, STATUS: Success, DETAILS: Booked BUS-0R-01 on Thursday at 12:00:00
+[2024-12-08 02:23:52] USER: dawsonjm, STATUS: Cancellation Failed, DETAILS: Unknown column 'id' in 'where clause'
+[2024-12-08 02:29:45] USER: dawsonjm, STATUS: Cancellation Failed, DETAILS: Unknown column 'id' in 'where clause'
+[2024-12-08 02:44:44] USER: admin12, STATUS: Cancellation Failed, DETAILS: Unknown column 'id' in 'where clause'
+[2024-12-08 02:56:18] USER: admin12, STATUS: Cancellation Failed, DETAILS: Unknown column 'id' in 'where clause'
+[2024-12-08 03:02:54] USER: admin12, STATUS: Cancellation Failed, DETAILS: Unknown column 'id' in 'where clause'
+[2024-12-08 03:03:01] USER: admin12, STATUS: Success, DETAILS: Booked BUS-0R-01 on Friday at 11:00:00
+[2024-12-08 03:03:14] USER: admin12, STATUS: Cancellation Failed, DETAILS: Unknown column 'id' in 'where clause'
+[2024-12-08 03:04:06] USER: admin12, STATUS: Cancellation Failed, DETAILS: Unknown column 'id' in 'where clause'
+[2024-12-08 03:04:10] USER: admin12, STATUS: Cancellation Failed, DETAILS: Unknown column 'id' in 'where clause'
+[2024-12-08 03:04:17] USER: admin12, STATUS: Success, DETAILS: Booked BUS-0R-01 on Friday at 10:00:00
+[2024-12-08 03:04:30] USER: admin12, STATUS: Cancellation Failed, DETAILS: Unknown column 'id' in 'where clause'
+[2024-12-08 03:06:43] USER: admin12, STATUS: Success, DETAILS: Booked BUS-0R-01 on Wednesday at 16:00:00
+[2024-12-08 03:06:56] USER: admin12, STATUS: Cancellation Failed, DETAILS: Unknown column 'id' in 'where clause'
+[2024-12-08 03:09:43] USER: admin12, STATUS: Cancellation Failed, DETAILS: Unknown column 'id' in 'where clause'
+[2024-12-08 03:12:04] USER: admin12, STATUS: Cancellation Success, DETAILS: Cancelled booking for BUS-0R-01 on Friday at 10:00:00
+[2024-12-08 03:12:08] USER: admin12, STATUS: Cancellation Success, DETAILS: Cancellation email sent successfully
+[2024-12-08 03:17:33] USER: admin12, STATUS: Cancellation Success, DETAILS: Cancelled booking for BUS-0R-01 on Friday at 11:00:00
+[2024-12-08 03:17:38] USER: admin12, STATUS: Cancellation Success, DETAILS: Cancellation email sent successfully
+[2024-12-08 03:17:58] USER: admin12, STATUS: Cancellation Success, DETAILS: Cancelled booking for BUS-0R-01 on Monday at 08:00:00
+[2024-12-08 03:18:03] USER: admin12, STATUS: Cancellation Success, DETAILS: Cancellation email sent successfully
+[2024-12-08 03:18:22] USER: admin12, STATUS: Success, DETAILS: Booked TRA-0R-01 on Friday at 11:00:00
+[2024-12-08 03:19:07] USER: admin12, STATUS: Cancellation Success, DETAILS: Cancelled booking for TRA-0R-01 on Friday at 11:00:00
+[2024-12-08 03:19:10] USER: admin12, STATUS: Cancellation Success, DETAILS: Cancellation email sent successfully
+[2024-12-08 03:21:55] USER: admin12, STATUS: Cancellation Success, DETAILS: Cancelled booking for BUS-0R-01 on Wednesday at 16:00:00
+[2024-12-08 03:21:59] USER: admin12, STATUS: Cancellation Success, DETAILS: Cancellation email sent successfully
+[2024-12-08 03:22:26] USER: admin12, STATUS: Cancellation Failed, DETAILS: Missing required parameters
+[2024-12-08 03:22:52] USER: admin12, STATUS: Cancellation Success, DETAILS: Cancelled booking for LFT-0R-01 on Tuesday at 15:00:00
+[2024-12-08 03:22:55] USER: admin12, STATUS: Cancellation Success, DETAILS: Cancellation email sent successfully
+[2024-12-08 03:24:46] USER: dawsonjm, STATUS: Cancellation Failed, DETAILS: Missing required parameters
+[2024-12-08 03:24:52] USER: dawsonjm, STATUS: Cancellation Failed, DETAILS: Missing required parameters
+[2024-12-08 03:26:16] USER: dawsonjm, STATUS: Cancellation Failed, DETAILS: Missing required parameters
+[2024-12-08 03:29:58] USER: dawsonjm, STATUS: Cancellation Success, DETAILS: Cancellation email sent successfully
+[2024-12-08 03:30:17] USER: dawsonjm, STATUS: Cancellation Success, DETAILS: Cancelled booking for TRA-0R-01 on Tuesday at 14:00:00
+[2024-12-08 03:30:21] USER: dawsonjm, STATUS: Cancellation Success, DETAILS: Cancellation email sent successfully
+[2024-12-08 03:31:03] USER: dawsonjm, STATUS: Success, DETAILS: Booked TRA-0R-01 on Friday at 11:00:00
+[2024-12-08 03:41:49] USER: dawsonjm, STATUS: Cancellation Success, DETAILS: Cancelled booking for TRA-0R-01 on Friday at 11:00:00
+[2024-12-08 03:41:53] USER: dawsonjm, STATUS: Cancellation Success, DETAILS: Cancellation email sent successfully
+[2024-12-08 03:45:05] USER: dawsonjm, STATUS: Cancellation Success, DETAILS: Cancellation email sent successfully
+[2024-12-08 03:48:49] USER: dawsonjm, STATUS: Cancellation Success, DETAILS: Cancelled booking for BUS-0R-01 on Tuesday at 14:00:00
+[2024-12-08 03:48:52] USER: dawsonjm, STATUS: Cancellation Success, DETAILS: Cancellation email sent successfully
+[2024-12-08 03:49:12] USER: dawsonjm, STATUS: Cancellation Success, DETAILS: Cancellation email sent successfully
+[2024-12-08 04:07:56] USER: dawsonjm, STATUS: Success, DETAILS: Booked TRA-0R-01 on Monday at 09:00:00
+[2024-12-08 04:17:31] USER: admin12, STATUS: Success, DETAILS: Booked BUS-0R-01 on Monday at 11:00:00
+[2024-12-08 04:51:18] USER: admin12, STATUS: Success, DETAILS: Booked TRA-0R-01 on Wednesday at 13:00:00
+[2024-12-08 04:56:30] USER: admin12, STATUS: Failed, DETAILS: Time slot not found.
+[2024-12-08 04:56:37] USER: admin12, STATUS: Success, DETAILS: Booked BUS-0R-01 on Tuesday at 16:00:00
+[2024-12-08 04:56:46] USER: admin12, STATUS: Success, DETAILS: Booked BUS-0R-01 on Friday at 10:00:00
+[2024-12-08 05:00:38] USER: admin12, STATUS: Success, DETAILS: Booked BUS-0R-01 on Tuesday at 11:00:00
+[2024-12-08 05:00:42] USER: admin12, STATUS: Success, DETAILS: Booked BUS-0R-01 on Wednesday at 10:00:00
+[2024-12-08 05:01:59] USER: admin12, STATUS: Success, DETAILS: Booked TRA-0R-01 on Wednesday at 14:00:00
+[2024-12-08 05:02:12] USER: admin12, STATUS: Success, DETAILS: Booked TRA-0R-02 on Wednesday at 11:00:00
+[2025-01-10 00:29:15] USER: admin12, STATUS: Success, DETAILS: Booked BUS-0R-01 on Wednesday at 10:00:00
